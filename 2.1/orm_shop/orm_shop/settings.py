@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ct07@4=j-4d#m1em8et9ok_%@hi)p($e*l9okih!58n1owm@oi
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '5432']
 
 
 # Application definition
@@ -78,9 +78,9 @@ WSGI_APPLICATION = 'orm_shop.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dj_orm',
-        'USER': 'adilet',
-        'PASSWORD': '1',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': 'veronika',
         'HOST': 'localhost',
         'PORT': 5432
     }

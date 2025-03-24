@@ -25,8 +25,8 @@ from main.views import cars_list_view, car_details_view, sales_by_car
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('cars/', cars_list_view, name='list'),
-    path('cars/<int:car_id>/', car_details_view, name='details'),
-    path('cars/<int:car_id>/sales/', sales_by_car, name='sales')
+    path('cars/<int:id_auto>/', car_details_view, name='details'),
+    path('cars/<int:id_auto>/sales/', sales_by_car, name='sales')
 ]
 
 
